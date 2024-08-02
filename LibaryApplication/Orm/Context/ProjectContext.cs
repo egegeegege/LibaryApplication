@@ -8,9 +8,9 @@ using LibaryApplication.Orm.Entity;
 
 namespace LibaryApplication.Orm.Context
 {
-    internal class DatabaseContext : DbContext
+    internal class ProjectContext : DbContext
     {
-        public DatabaseContext()
+        public ProjectContext()
         {
             Database.Connection.ConnectionString = "Server=.;Database=Libary;uid=sa;pwd=1453";
         }

@@ -5,14 +5,14 @@
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<LibaryApplication.Orm.Context.DatabaseContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<LibaryApplication.Orm.Context.ProjectContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(LibaryApplication.Orm.Context.DatabaseContext context)
+        protected override void Seed(LibaryApplication.Orm.Context.ProjectContext context)
         {
             //  This method will be called after migrating to the latest version.
 
