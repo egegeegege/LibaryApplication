@@ -1,6 +1,6 @@
 ﻿namespace LibaryApplication
 {
-    partial class frm_girisYap
+    partial class frm_KullanıcıGirisYap
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_girisYap));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_KullanıcıGirisYap));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txt_gmail = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -117,8 +117,9 @@
             this.link_kayitOl.TabIndex = 4;
             this.link_kayitOl.TabStop = true;
             this.link_kayitOl.Text = "Kayıt olmadınmı ?";
+            this.link_kayitOl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_kayitOl_LinkClicked);
             // 
-            // Form1
+            // frm_KullanıcıGirisYap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -132,7 +133,7 @@
             this.Controls.Add(this.txt_sifre);
             this.Controls.Add(this.txt_gmail);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Form1";
+            this.Name = "frm_KullanıcıGirisYap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

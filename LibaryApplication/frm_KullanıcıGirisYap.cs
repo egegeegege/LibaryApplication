@@ -13,13 +13,13 @@ using LibaryApplication.Orm.Entity;
 
 namespace LibaryApplication
 {
-    public partial class frm_girisYap : Form
+    public partial class frm_KullanıcıGirisYap : Form
     {
         ProjectContext db = new ProjectContext();
         string Email = "";
         string Sifre = "";
         int ID;
-        public frm_girisYap()
+        public frm_KullanıcıGirisYap()
         {
             InitializeComponent();
         }
@@ -40,7 +40,7 @@ namespace LibaryApplication
             {
                 if (Email == txt_gmail.Text) 
                 {
-                    MessageBox.Show("Hoşgeldiniz");
+                    MessageBox.Show("Hoşgeldin Sayın Okur");
                 }
                 else
                 {
@@ -51,6 +51,12 @@ namespace LibaryApplication
             {
                 MessageBox.Show("Şifre hatalı");
             }
+        }
+
+        private void link_kayitOl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frm_KullanıcıKayıtol frm_KullanıcıKayıtol = new frm_KullanıcıKayıtol();
+            frm_KullanıcıKayıtol.Show();
         }
     }
 }
