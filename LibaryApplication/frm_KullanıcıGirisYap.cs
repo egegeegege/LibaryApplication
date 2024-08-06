@@ -26,6 +26,11 @@ namespace LibaryApplication
 
         private void btn_girisYap_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(txt_gmail.Text) || string.IsNullOrWhiteSpace(txt_sifre.Text))
+            {
+                MessageBox.Show("Boş girmeyiniz.");
+                return; // burada kullanıcın boş girip girmediğini kontrol etirdim G
+            }
             List<Kullanıcı> kln = new List<Kullanıcı>();
             kln = db.Kullanıcıs.Where(y => y.Sifre == txt_sifre.Text).ToList();
 
@@ -57,6 +62,7 @@ namespace LibaryApplication
         {
             frm_KullanıcıKayıtol frm_KullanıcıKayıtol = new frm_KullanıcıKayıtol();
             frm_KullanıcıKayıtol.Show();
+            this.Hide();
         }
     }
 }

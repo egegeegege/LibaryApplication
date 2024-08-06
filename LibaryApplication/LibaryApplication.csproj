@@ -83,6 +83,9 @@
     <EmbeddedResource Include="frm_KullanıcıGirisYap.resx">
       <DependentUpon>frm_KullanıcıGirisYap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_KullanıcıKayıtol.resx">
+      <DependentUpon>frm_KullanıcıKayıtol.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202408021058185_a.resx">
       <DependentUpon>202408021058185_a.cs</DependentUpon>
     </EmbeddedResource>
