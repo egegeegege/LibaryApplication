@@ -45,6 +45,7 @@
             this.btn_kitapEkle.TabIndex = 1;
             this.btn_kitapEkle.Text = "Kitap Ekle";
             this.btn_kitapEkle.UseVisualStyleBackColor = false;
+            this.btn_kitapEkle.Click += new System.EventHandler(this.btn_kitapEkle_Click);
             // 
             // btn_kitaplar
             // 

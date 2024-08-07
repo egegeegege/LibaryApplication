@@ -16,5 +16,11 @@ namespace LibaryApplication
         {
             InitializeComponent();
         }
+
+        private void btn_kitapEkle_Click(object sender, EventArgs e)
+        {
+            frm_KitapEkle frm_KitapEkle = new frm_KitapEkle();
+            frm_KitapEkle.Show();
+        }
     }
 }

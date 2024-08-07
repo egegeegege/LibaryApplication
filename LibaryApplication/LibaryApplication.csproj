@@ -56,6 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_KitapEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_KitapEkle.Designer.cs">
+      <DependentUpon>frm_KitapEkle.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_KullanıcıGirisYap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     <Compile Include="Orm\Entity\RequiredAttribute.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_KitapEkle.resx">
+      <DependentUpon>frm_KitapEkle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_KullanıcıGirisYap.resx">
       <DependentUpon>frm_KullanıcıGirisYap.cs</DependentUpon>
     </EmbeddedResource>
