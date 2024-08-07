@@ -61,6 +61,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgv_KitapListesi);
             this.Name = "frm_KitapListesi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_KitapListesi";
             this.Load += new System.EventHandler(this.frm_KitapListesi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_KitapListesi)).EndInit();

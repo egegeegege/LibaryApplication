@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LibaryApplication.Orm.Context;
 
 namespace LibaryApplication
 {
@@ -20,6 +21,7 @@ namespace LibaryApplication
         public string kid;
         public int id;
         public string ImageBase64;
+        ProjectContext db = new ProjectContext();
         public frm_KitapListesi()
         {
             InitializeComponent();
@@ -54,13 +56,13 @@ namespace LibaryApplication
 
         private void dgv_KitapListesi_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            //frmPersonelDetay frmPersonelDetay = new frmPersonelDetay();
-            //frmPersonelDetay.kid = kid;
-            //id = int.Parse(dgv_PersonelListesi.CurrentRow.Cells[0].Value.ToString());
-            //ImageBase64 = db.UserProperties.Where(a => a.ID == id).First().Vesikalık.ToString();
-            //frmPersonelDetay.id = id;
-            //frmPersonelDetay.base64Image = ImageBase64;
-            //frmPersonelDetay.Show();
+            frm_KitapDetay frm_KitapDetay = new frm_KitapDetay();
+            frm_KitapDetay.kid = kid;
+            id = int.Parse(dgv_KitapListesi.CurrentRow.Cells[0].Value.ToString());
+            ImageBase64 = db.Kitaps.Where(a => a.ID == id).First().ImageUrl.ToString();
+            frm_KitapDetay.id = id;
+            frm_KitapDetay.base64Image = ImageBase64;
+            frm_KitapDetay.Show();
         }
     }
 }
