@@ -46,6 +46,9 @@ namespace LibaryApplication
                 if (Email == txt_gmail.Text) 
                 {
                     MessageBox.Show("Hoşgeldin Sayın Okur");
+                    frm_YoneticiPanel frm_YoneticiPanel = new frm_YoneticiPanel();
+                    frm_YoneticiPanel.Show();
+                    this.Hide();
                 }
                 else
                 {

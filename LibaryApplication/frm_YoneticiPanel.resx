@@ -117,11 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="5d7499e0-409d-52c7-b47e-1461d67d3af5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5d7499e0-409d-52c7-b47e-1461d67d3af5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1641467553_70-www-funnyart-club-p-foni-s-knigami-76" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1641467553_70-www-funnyart-club-p-foni-s-knigami-76.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

@@ -68,6 +68,12 @@
     <Compile Include="frm_KullanıcıKayıtol.Designer.cs">
       <DependentUpon>frm_KullanıcıKayıtol.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_YoneticiPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_YoneticiPanel.Designer.cs">
+      <DependentUpon>frm_YoneticiPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\202408021058185_a.cs" />
     <Compile Include="Migrations\202408021058185_a.Designer.cs">
       <DependentUpon>202408021058185_a.cs</DependentUpon>
@@ -86,6 +92,9 @@
     <EmbeddedResource Include="frm_KullanıcıKayıtol.resx">
       <DependentUpon>frm_KullanıcıKayıtol.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_YoneticiPanel.resx">
+      <DependentUpon>frm_YoneticiPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202408021058185_a.resx">
       <DependentUpon>202408021058185_a.cs</DependentUpon>
     </EmbeddedResource>
@@ -97,6 +106,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -112,7 +122,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\5d7499e0-409d-52c7-b47e-1461d67d3af5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1641467553_70-www-funnyart-club-p-foni-s-knigami-76.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
