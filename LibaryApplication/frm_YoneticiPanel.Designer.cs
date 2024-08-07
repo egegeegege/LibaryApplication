@@ -60,6 +60,7 @@
             this.btn_kitaplar.TabIndex = 1;
             this.btn_kitaplar.Text = "Mevcut Kitaplar";
             this.btn_kitaplar.UseVisualStyleBackColor = false;
+            this.btn_kitaplar.Click += new System.EventHandler(this.btn_kitaplar_Click);
             // 
             // frm_YoneticiPanel
             // 

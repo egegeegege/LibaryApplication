@@ -22,5 +22,11 @@ namespace LibaryApplication
             frm_KitapEkle frm_KitapEkle = new frm_KitapEkle();
             frm_KitapEkle.Show();
         }
+
+        private void btn_kitaplar_Click(object sender, EventArgs e)
+        {
+            frm_KitapListesi frm_KitapListesi = new frm_KitapListesi();
+            frm_KitapListesi.Show();
+        }
     }
 }
