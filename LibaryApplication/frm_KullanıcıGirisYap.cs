@@ -28,7 +28,7 @@ namespace LibaryApplication
         {
             if (string.IsNullOrWhiteSpace(txt_gmail.Text) || string.IsNullOrWhiteSpace(txt_sifre.Text))
             {
-                MessageBox.Show("Boş girmeyiniz.");
+                MessageBox.Show("Bu alanı boş bırakmayınız");
                 return; // burada kullanıcın boş girip girmediğini kontrol etirdim G
             }
             List<Kullanıcı> kln = new List<Kullanıcı>();
@@ -45,7 +45,7 @@ namespace LibaryApplication
             {
                 if (Email == txt_gmail.Text) 
                 {
-                    MessageBox.Show("Hoşgeldin Sayın Okur");
+                    MessageBox.Show("Hoşgeldin Sayın Admin");
                     frm_YoneticiPanel frm_YoneticiPanel = new frm_YoneticiPanel();
                     frm_YoneticiPanel.Show();
                     this.Hide();
