@@ -64,5 +64,16 @@ namespace LibaryApplication
             frm_KitapDetay.base64Image = ImageBase64;
             frm_KitapDetay.Show();
         }
+
+        private void btn_sil_Click(object sender, EventArgs e)
+        {
+            string sorgu = "DELETE FROM Libary WHERE ID=@ID";
+            komut = new SqlCommand(sorgu,baglanti);
+            komut.Parameters.AddWithValue("@ID", Convert.ToInt32(txt_no.Text));
+            baglanti.Open();
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+            verigetir();
+        }
     }
 }
