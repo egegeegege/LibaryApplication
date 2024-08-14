@@ -52,7 +52,7 @@ namespace LibaryApplication
 
                 db.Kullanıcıs.Add(kullanıcı);
                 db.SaveChanges();
-                MessageBox.Show("Kayıt başarıyla oluşturuldu");
+                MessageBox.Show("Kayıt başarıyla oluşturuldu sayın okur");
                 this.Hide();
 
             }
